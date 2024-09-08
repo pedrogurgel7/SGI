@@ -10,5 +10,11 @@ export default defineConfig({
             ],
             refresh: true,
         }),
+
     ],
+    build: {
+        outDir: 'dist', // diretório onde os arquivos serão gerados
+        assetsDir: 'assets', // diretório para arquivos estáticos
+        sourcemap: false, // desativa sourcemaps para produção
+    },
 });
